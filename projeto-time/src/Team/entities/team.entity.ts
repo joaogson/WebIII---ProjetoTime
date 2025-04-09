@@ -6,6 +6,6 @@ export class Team{
     name: string
     city: string
     adress: string
-    players: Player[]
+    players: string
 
 }

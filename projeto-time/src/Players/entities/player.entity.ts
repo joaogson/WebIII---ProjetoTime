@@ -7,5 +7,5 @@ export class Player{
     number: number
     position: string
     age: number
-    team: Team
+    team: string
 }

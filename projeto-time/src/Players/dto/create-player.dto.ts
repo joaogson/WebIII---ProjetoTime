@@ -25,5 +25,5 @@ export class createPlayerDto{
     @IsString({message: "A posição deve ser uma string"})
     @MinLength(2, {message: "Deve ter no minimo 2 caracteres"})
     @MaxLength(50, {message: "É permitido no maximo 50 caracteres"})
-    readonly team: Team
+    readonly team: string
 }

@@ -19,7 +19,9 @@ export class createTeamDto{
     @MaxLength(50, {message: "É permitido no maximo 150 caracteres"})
     adress: string
 
-    @IsObject()
-    players: Player[]
+    @IsString({message: "Deve ser uma string"})
+    @MinLength(2, {message: "Deve ter no minimo dois caracteres"})
+    @MaxLength(50, {message: "É permitido no maximo 150 caracteres"})
+    players: string
 
 }
